@@ -1,0 +1,200 @@
+/* 初始化样式 */
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: black}
+img{display: block;}
+ul{list-style: none;}
+/* #wrapper{background: url(../images/bg.jpg) repeat-y;background-size: 100%;background-attachment:fixed;} */
+.wrapper>img{position: fixed;width: 100%;left: 0;top: 0;z-index: -10;right: 0;}
+.wrapper>img:nth-child(2){display: block;}
+.wrapper>img:nth-child(1){display: none;}
+.slogan{margin: 3.5rem 0;}
+.slogan>h3{text-align: center;font-size: 36px;font-weight: bold;color: #f1f1f1;margin-bottom: 3rem;margin-top: 1rem;}
+.slogan>h3>.bg-text{margin-bottom: -2rem;color: #3a377a;font-size: 42px;}
+.slogan>h3>span{display: block;}
+
+/* 导航栏样式 */
+.logo{display: flex;padding: 0 5%;background: rgba(0, 0, 0,0.6);position: fixed;width: 100%;z-index: 1000;}
+.content>.logo>img{width: 6rem;height: 3.6rem;margin: 1rem 0;}
+.logo>ul{display: flex;width: 76%;justify-content: space-around;margin-left: 4%;}
+.logo>ul>li{width: 12.5%;}
+.logo>ul>li>.active{background: rgba(216, 21, 18,0.9);font-weight: bold;}
+.logo>ul>li>a{color: #f1f1f1;display: block;line-height:5.6rem;text-align: center;}
+.logo>ul>li>a:hover{background:rgba(216, 21, 18, 0.5);font-weight: bold;}
+.content>.title{padding: 5rem 30% 0 30%;}
+.title>img{width: 100%;}
+.content>.zhibo{position: fixed;right: -23rem;bottom: -1.5rem;width: 72%;}
+.content>.zhibo>a{display: block;padding: 0 30%;}
+.content>.zhibo>a>img{width: 90%;}
+
+
+/* 大会介绍 */
+
+.introduction{margin: 1.5rem 0;}
+.intro{display: flex;text-align: left;line-height: 2rem;color: #fcfcfc;margin-top: 2.8rem;background: rgba(0, 0, 0, 0.5);padding: 0 5%;justify-content: space-between;}
+.jieshao{width: 47%;background: rgba(0, 0, 0, 0.5);}
+.intro ul{text-indent: 2rem;padding:  1rem;}
+.intro ul>li{line-height: 2.4rem;font-size: 14px;}
+.intro>.jieshao>h3{line-height: 3rem;color: #fff;padding: 0.5rem 3rem;font-size: 16px;background:rgba(216, 21, 18, 0.5);}
+.biao{padding: 0.5rem 30%;}
+.biao>img{width: 100%;}
+.icon{margin-right: 0.8rem;}
+
+/* 会议议程样式 */
+          .age{margin-top: 2rem;}
+          .age>img{width: 100%;}
+          .age>ul>li{color: #f9f9f9;line-height: 1.5rem;font-size: 16px;padding-top: 0.35rem;background: rgba(0,0,0,0.5);}
+          .age>ul>li .iconfont{font-size: 20px;}
+          .age>ul>li>h3{background: rgba(216, 21, 18, 0.5);padding: 10px 6% ;font-weight: normal;font-size: 20px;}
+          .age>ul>li>ul{padding: 0.6rem 8%;background: rgba(0, 0, 0, 0.5)}
+          .age>ul>li>ul>li{padding: 0.3rem 0;}
+          .age>ul>li>ul>li>p{padding: 0.2rem 1.2rem;cursor: pointer;}
+          .age>ul>li>ul>li>p:nth-child(1){padding: 0;}
+          .age>ul>li>ul>li>p:hover{color: rgba(216, 21, 18)}
+          .age>ul>li> p>.iconfont{margin-right: 5px;}
+          .age>ul>li>ul>li>p>.shutiao{color: rgba(216, 21, 18);margin-right: 0px;}
+
+          /* 会议亮点样式 */
+          .light{display: flex;padding: 0 5%;}
+          .light>ul{width: 48%;;display: flex;justify-content: space-around;}
+          .light>ul>li{width: 48%;;height: 20rem;;margin: 0.3rem 0;background:rgba(0, 0, 0, 0.5);border: 1px solid rgba(216, 21, 18,0.5);text-align: center;border-radius: 5px;color: #f9f9f9;line-height: 1rem;cursor: pointer;background: rgba(216, 21, 18, 0.5);}
+          .light>ul>li:hover{background: rgba(0, 0, 0, 0.5);}
+          .light>ul>li>p:nth-child(1){margin-top: 3rem;}
+          .light>ul>li>p>.icon-n{font-size: 54px;line-height: 4rem;}
+          .light>ul>li>h2{font-size: 72px;line-height: 8rem;animation:change 2s linear 0s infinite;}
+          @keyframes change{0%{text-shadow: 0;} 50%{ text-shadow: 6px 6px 6px rgba(255, 255, 255, 0.5);}100% { text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);}}
+
+          /* 大会导览 */
+          .guide>.biaoyu{padding: 0 35%;margin: 1rem 0;}
+          .guide>.biaoyu>img{width: 100%;}
+          .guide>ul{padding: 0 5%;justify-content: space-between;display: flex;}
+          .guide>ul>li{margin-top: 0.36rem;;width: 30%;padding:  0.3rem  0.3rem 1.2rem 0.3rem;color: #f9f9f9;border: 1px solid rgba(216, 21, 18,0.5);background: rgba(0, 0, 0, 0.5);border-radius: 5px;font-size: 15px;line-height: 3rem;text-align: center;}
+          .guide>ul>li:hover{background: #000;}
+          .guide>ul>li>h3{font-size: 16px;line-height: 5rem;border-bottom: 1px solid #fcfcfc;margin-bottom: 5px;font-weight: bold;background: url(../images/logo-u8.png) no-repeat 30% center;padding: 0 0 0 43%;text-align: left;background-size: 20%;}
+          .daolan{background:rgba(216, 21, 18, 0.5);color: #f1f1f1;padding: 1rem 5%;text-indent: 2rem;font-size: 15px;line-height: 2rem;}
+
+          /* 合作伙伴 */
+          .part>ul{display: flex;justify-content: space-between;padding: 0.5rem 30%;}
+          .part>ul>li{width: 31%;}
+          .part>ul>li>img{width: 100%;}
+
+
+          /* 相关报道 */
+          .report{display: flex;padding: 0 5%;}
+          .report>a{display: block;width: 15%;text-align: center;color: #f1f1f1;font-weight: bold;font-size: 56px;}
+          .report-content{width: 100%;overflow: hidden;}
+          .report-content>ul{display: flex;justify-content: space-between;}
+          .report-content>ul>li{width: 30%;}
+          .report-content>ul>li:nth-child(1){margin-left: 0;}
+          .report-content>ul>li>a{position: relative;width: 100%;display: block;}
+          .report-content>ul>li>a>img{width: 100%;}
+          .report-content>ul>li>a>h4{position: absolute;padding:0 3%;width: 94%;display: block;font-size: 12px;bottom: 0;background:rgba(216, 21, 18, 0.5);line-height: 30px;color: #f1f1f1;font-weight: normal;}
+          .elseR a{color: #f1f1f1;text-decoration: underline;}
+
+          /* 底部样式 */
+          .bottom{background: #222;font-size: 12px;line-height: 2rem;color: #f1f1f1;padding: 15px 0;}
+          .bottom>p{text-align: center;}
+ 
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:24px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 800px) {
+          .wrapper>img:nth-child(2){display: none;}
+          .wrapper>img:nth-child(1){display: block;}
+          .slogan{margin: 1.5rem 0;}
+          .slogan>h3{text-align: center;font-size: 28px;font-weight: bold;color: #f1f1f1;margin-bottom: 1rem;width: 100%;}
+          .slogan>h3>.bg-text{margin-bottom: -1rem;color: #3a377a;font-size: 32px;}
+          .slogan>h3>span{display: block;}
+
+          /* 首页样式 */
+          .wrapper .front{width: 100%;}
+          .wrapper .front>img{width: 100%;}
+          .wrapper .content>.logo>img{margin-top: 2.6rem;width: 4rem;height: 2.4rem;}
+          .wrapper .content>.title{padding: 6rem 5%;}
+          .wrapper .title>img{width: 100%;}
+          .wrapper .logo{padding: 0 10%;background: none;width: 80%;;position: absolute;}
+          .wrapper .logo>ul{display: none;}
+          /* .content>.zhibo{background: rgba(216, 21, 18, 0.5);} */
+          .wrapper .content>.zhibo>a{display: block;}
+          .content>.zhibo{position: absolute;right: 5.5rem;bottom: 8.5rem;width:100%;z-index: 1000;}
+          .wrapper .content>.zhibo>a>img{width: 200%;}
+          .wrapper .content>.nav{position: fixed;right: 2rem;bottom: 2rem;}
+          .wrapper .content>.nav>a{display: block;width: 2.5rem;height: 2.5em;box-shadow: #f1f1f1 1px 2px 2px;}
+          .wrapper .content>.nav>a>img{width: 2.5rem;}
+
+          /* 大会介绍样式 */
+          .wrapper .introduction{margin: 1.5rem 0;}
+          .wrapper .intro{display: block;text-align: left;line-height: 2rem;color: #fcfcfc;margin-top: 2.8rem;background: rgba(0, 0, 0, 0.5);padding: 0;}
+          .wrapper .intro>.jieshao{width: 100%;}
+          .wrapper .intro>.jieshao>h3{background:rgba(216, 21, 18, 0.5);line-height: 2rem;margin: 1rem 0;}
+          .wrapper .intro ul{text-indent: 2rem;padding:  1rem;}
+          .wrapper .intro ul>li{line-height: 2.4rem;font-size: 14px;}
+          .wrapper .intro>.jieshao>h3{line-height: 3rem;color: #fff;padding: 0.5rem 1rem;font-size: 16px;margin: 0;}
+          .wrapper .biao{padding: 0 5%;}
+          .wrapper .biao>img{width: 100%;}
+          .wrapper .icon{margin-right: 0.8rem;}
+
+          /* 会议议程样式 */
+          .wrapper .age{margin-top: 2rem;}
+          .wrapper .age>img{width: 100%;}
+          .wrapper .age>ul>li{color: #f9f9f9;line-height: 1.5rem;font-size: 14px;padding-top: 0.35rem;background: rgba(0,0,0,0.5);}
+          .wrapper .age>ul>li .iconfont{font-size: 16px;}
+          .wrapper .age>ul>li>h3{background: rgba(216, 21, 18, 0.5);padding: 0.3rem 1rem;font-weight: bold;font-size: 16px;}
+          .wrapper .age>ul>li>ul{padding: 0.2rem 1.4rem;}
+          .wrapper .age>ul>li>ul>li{padding: 0.3rem 0;}
+          .wrapper .age>ul>li>ul>li>p{padding: 0.2rem 1.2rem;}
+          .wrapper .age>ul>li>ul>li>p:nth-child(1){padding: 0;}
+          .wrapper .age>ul>li> p>.iconfont{margin-right: 5px;}
+          .wrapper .age>ul>li>ul>li>p>.shutiao{color: rgba(216, 21, 18);margin-right: 0px;}
+
+
+          /* 会议亮点样式 */
+          .wrapper .light{display: block;padding: 0;}
+          .wrapper .light>ul{padding:0 5%;display: flex;justify-content: space-around;width: 90%;}
+          .wrapper .light>ul>li{width: 48%;;height: 12rem;;margin: 0.3rem 0;background:rgba(0, 0, 0, 0.5);border: 1px solid rgba(216, 21, 18,0.5);text-align: center;border-radius: 5px;color: #f9f9f9;line-height: 1rem;}
+          .wrapper .light>ul>li>p:nth-child(1){margin-top: 0.6rem;}
+          .wrapper .light>ul>li>p>.icon-n{font-size: 54px;line-height: 4rem;}
+          .wrapper .light>ul>li>h2{font-size: 48px;line-height: 4rem;}
+          .wrapper .light>ul>li>h2{animation:change 2s linear 0s infinite;}
+          @keyframes change{0%{text-shadow: 0;} 50%{ text-shadow: 6px 6px 6px rgba(255, 255, 255, 0.5);}100% { text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);}}
+
+
+          /* 合作伙伴 */
+          .wrapper .part>ul{display: flex;justify-content: space-between;padding: 0.5rem 5%;}
+          .wrapper .part>ul>li{width: 31%;}
+          .wrapper .part>ul>li>img{width: 100%;}
+
+          /* 参会报名 */
+          .report{padding: 0 7%;}
+          .report-content>ul{display: block;}
+          .report-content>ul>li{width: 100%;margin-top: 15px;}
+          .wrapper .log-in>a{text-align: center;display: block;font-weight: bold;color: #f9f9f9;}
+
+          /* 底部样式 */
+          .wrapper .bottom{background: #222;font-size: 12px;line-height:2rem;color: #f1f1f1;padding: 0 5%;}
+          .wrapper .bottom>p{text-align: center;}
+
+          /* 大会导览 */
+          .wrapper .guide>.biaoyu{padding: 0 16%;margin: 1.6rem 0;}
+          .wrapper .guide>.biaoyu>img{width: 100%;}
+          .wrapper .guide>ul{padding: 0 7%;justify-content: space-between;display: block;}
+          .wrapper .guide>ul>li{margin-top: 0.36rem;;width: 100%;padding-bottom: 0.6rem;color: #f9f9f9;border: 1px solid rgba(216, 21, 18,0.5);background: rgba(0, 0, 0, 0.5);border-radius: 5px;font-size: 15px;line-height: 2.4rem;text-align: center;}
+          .wrapper .guide>ul>li>h3{font-size: 16px;line-height: 3rem;border-bottom: 1px solid #fcfcfc;margin-bottom: 5px;font-weight: bold;background: url(../images/logo-u8.png) no-repeat 30% center;padding: 0 0 0 43%;text-align: left;background-size: 20%;}
+          .wrapper .daolan{background:rgba(216, 21, 18, 0.5);color: #f1f1f1;padding: 1rem 5%;text-indent: 2rem;font-size: 15px;line-height: 2rem;}
+}
+
+
+
